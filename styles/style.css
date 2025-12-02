@@ -78,13 +78,6 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
-}
-
-.social-github {
-  color: white;
-}
-
-.social-insta {
   color: white;
 }
 
@@ -96,7 +89,7 @@ body {
   color: var(--accent2);
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -175,7 +168,7 @@ body {
   border-radius: 12px;
 }
 
-/* Contact */
+/* Contact Form */
 form {
   display: flex;
   flex-direction: column;
@@ -218,44 +211,40 @@ textarea {
   flex-wrap: wrap;
 }
 
-.email-link {
-  color: var(--accent2);
-}
-
-.email-link:hover {
-  color: var(--accent);
-}
+/* ========================= */
+/*     MOBILE RESPONSIVE     */
+/* ========================= */
 
 @media (max-width: 768px) {
 
   .header-inner {
     flex-direction: column;
-    gap: 15px;
     text-align: center;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 2.1rem;
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+    border-radius: 12px;
   }
 
-  .hero {
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    gap: 25px;
-    text-align: center;
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
   }
 
   .hero-text {
     text-align: center;
-  }
-
-  .hero-text h2 {
-    font-size: 32px;
   }
 
   .hero-img img {
@@ -267,16 +256,17 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  form input,
-  form textarea {
-    width: 100%;
+  body, html {
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-text h2 {
-    font-size: 28px;
+
+  .logo {
+    font-size: 1.8rem;
   }
+
   .hero-img img {
     width: 180px;
     height: 180px;
