@@ -272,30 +272,3 @@ textarea {
     height: 180px;
   }
 }
-  /* Reduce space between header and hero */
-  .header {
-    padding: 0.5rem 0;
-  }
-
-  .hero {
-    padding-top: 20px;
-  }
-
-@media (max-width: 480px) {
-  .hero-text h2 {
-    font-size: 28px;
-  }
-
-  .hero-img img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .header {
-    padding: 0.4rem 0;
-  }
-
-  .hero {
-    padding-top: 15px;
-  }
-}
