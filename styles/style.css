@@ -226,10 +226,6 @@ textarea {
   color: var(--accent);
 }
 
-/* -------------------------------- */
-/*       MOBILE FIX ADDED HERE      */
-/* -------------------------------- */
-
 @media (max-width: 768px) {
 
   .header-inner {
